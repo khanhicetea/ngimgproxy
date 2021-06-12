@@ -9,6 +9,7 @@ NginX + ImgProxy on Docker
 ```
 IMGPROXY_KEY=
 IMGPROXY_SALT=
+IMGPROXY_PATH_PREFIX=
 ```
 
 - Step 2 : run docker-compose

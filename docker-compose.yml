@@ -38,3 +38,11 @@ services:
       IMGPROXY_PROMETHEUS_BIND: "0.0.0.0:8081"
     networks:
       - ngimgproxy
+  vector:
+    image: timberio/vector:latest-alpine
+    volumes:
+      - ./vector.toml:/etc/vector/vector.toml:ro
+    restart: always
+    networks:
+      - ngimgproxy
+
